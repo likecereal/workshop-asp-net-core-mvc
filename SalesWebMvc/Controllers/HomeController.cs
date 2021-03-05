@@ -15,11 +15,13 @@ namespace SalesWebMvc.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult About()//o IActionresult é o supertipo genérico para todo o resultado de acção que devolve vários tipos: viewResult, partialViewResult
         {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
+            ViewData["Message"] = "Salles Web MVC App from C# Course";
+            ViewData["email"] = "teste@gmail.com";
+            ViewData["Student"] = "Aires";
+            return View();//é um methodbuilder, um método auxiliar que retorna o IactionResult aka viewresult
+            
         }
 
         public IActionResult Contact()
