@@ -47,6 +47,7 @@ namespace SalesWebMvc
             services.AddScoped<SeedingService>();
             services.AddScoped<SellerService>();//com isto depois podemos injectar o novo serviço que vai tratar do DbContext em outras  - para o seller
             services.AddScoped<DepartmentService>();//com isto depois podemos injectar o novo serviço que vai tratar do DbContext em outras classes - para o department
+            services.AddScoped<SalesRecordService>();//com isto depois podemos injectar o novo serviço que vai tratar do DbContext em outras classes - para o SalesRecord
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
